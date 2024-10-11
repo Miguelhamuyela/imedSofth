@@ -2,47 +2,69 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta charset="utf-8">
-    <title>CPLP - @yield('titulo')</title>
 
-    
-     {{--Protecção contra clickJacking--}}
-     {!! header('X-Frame-Options: SAMEORIGIN') !!}
-     
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta name="description" content="II Reunião Interministerial da Governação Electrónica & XI Reunião de Ministros das Comunicações da CPLP">
-    <meta name="keywords" content="II Reunião Interministerial da Governação Electrónica CPLP, XI Reunião de Ministros das Comunicações da CPLP, CPLP, TICS, GOVERNAÇÃO ELECTRONICA">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta property="og:title" content="II Reunião Interministerial da Governação Electrónica & XI Reunião de Ministros das Comunicações da CPLP" />
-    <meta property="og:site_name" content="II Reunião Interministerial da Governação Electrónica & XI Reunião de Ministros das Comunicações da CPLP" />
-    <meta property="og:description" content="II Reunião Interministerial da Governação Electrónica & XI Reunião de Ministros das Comunicações da CPLP" />
-    <meta property="og:type" content="article" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="HTML5 Template" />
+    <meta name="keywords" content="Fondex - Business and Finance Consulting HTML5 Template, Zippco - Business and Finance Consulting WordPress Theme, Axacus - Business Agency WordPress Theme, Axacus - Business Agency HTML Template, themes & template, html5 template, WordPress theme, unlimited colors available, ui/ux, ui/ux design, best html template, html template, html, woocommerce, shopify, prestashop, eCommerce, JavaScript, best CSS theme,css3, elementor theme, latest premium themes 2023, latest premium templates 2023, Preyan Technosys Pvt.Ltd, cymol themes, themetech mount, Web 3.0, multi-theme, website theme and template, woocommerce, bootstrap template, web templates, responsive theme, services, web design and development, business accountant, advisor, business, company consultancy, creative websites, finance, financial, insurance, legal adviser, business agents, marketing, trader, trading ">
+    <meta name="description" content="Fondex – Business &amp; Finance Consulting HTML Template" />
+    <meta name="author" content="../../../www.themetechmount.com/index.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Fondex – Business &amp; Finance Consulting HTML Template</title>
 
-    <!-- Fav and touch icons -->
-    <link href="/site/images/favicon.png" rel="shortcut icon" />
-    <script>
-        console.log(window.innerWidthw);
-        if(window.innerWidth <= 800 && window.innerHeight <= 600) {
-            document.getElementById("mobil").style.visibility = "visible";
-            document.getElementById("desktop").style.visibility = "hidden";
-        }
-           else
-           document.getElementById("mobil").style.visibility = "hidden";
-           document.getElementById("desktop").style.visibility = "visible";
-    </script>
+    <!-- favicon icon -->
+    <link rel="shortcut icon" href="/site/images/favicon.png" />
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" type="text/css" href="site/css/bootstrap.min.css" />
+
+    <!-- animate -->
+    <link rel="stylesheet" type="text/css" href="site/css/animate.css" />
+
+    <!-- owl-carousel -->
+    <link rel="stylesheet" type="text/css" href="site/css/owl.carousel.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" type="text/css" href="/site/css/font-awesome.css" />
+
+    <!-- themify -->
+    <link rel="stylesheet" type="text/css" href="site/css/themify-icons.css" />
+
+    <!-- flaticon -->
+    <link rel="stylesheet" type="text/css" href="site/css/flaticon.css" />
+
+
+    <!-- REVOLUTION LAYERS STYLES -->
+
+    <link rel="stylesheet" type="text/css" href="site/revolution/css/layers.css">
+
+    <link rel="stylesheet" type="text/css" href="site/revolution/css/settings.css">
+
+    <!-- prettyphoto -->
+    <link rel="stylesheet" type="text/css" href="site/css/prettyPhoto.css">
+
+    <!-- shortcodes -->
+    <link rel="stylesheet" type="text/css" href="site/css/shortcodes.css" />
+
+    <!-- main -->
+    <link rel="stylesheet" type="text/css" href="site/css/main.css" />
+
+    <!-- responsive -->
+    <link rel="stylesheet" type="text/css" href="site/css/responsive.css" />
+
+
+
+
+   
     {{-- sweetalert --}}
     <link rel="stylesheet" href="/css/sweetalert2.css">
     <script src="/js/sweetalert2.all.min.js"></script>
 
 
     <!-- ===== All CSS files ===== -->
-    <link rel=manifest href="/site/images/icons/favicons/site.webmanifest">
-    <link rel=mask-icon href="/site/images/icons/favicons/safari-pinned-tab.svg" color=#232323>
+    <link rel=manifest href="site/images/icons/favicons/site.webmanifest">
+    <link rel=mask-icon href="site/images/icons/favicons/safari-pinned-tab.svg" color=#232323>
     <meta name=msapplication-TileColor content=#ffffff>
     <meta name=theme-color content=#ffffff>
     <link href="/site/css/theme.min.css" rel=stylesheet>
